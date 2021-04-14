@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "TOSTTV",
+    "version": "1.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [ "src/content/css/banner.css" ],
+            "js": ["src/content/js/index.js", "src/content/js/banner.js", "src/content/js/engine.js", "src/content/js/grabImgs.js", "src/utils/js/loadImg.js", "src/utils/js/loadModel.js","src/libs/js/ml5.min.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+       "128": "icons/icon128.png"
+    }
+}
